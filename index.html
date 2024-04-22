@@ -7,6 +7,9 @@
     <title>DexLabs</title>
 </head>
 <body>
+    <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div class="navbar">
         <nav>
             <h2 class="logo">Dexx<span>Labs</span></h2> <!--Replace it with an actual logo(Design a logo)-->
@@ -25,5 +28,15 @@
             <h1>Ranbeer</h1>
         </div>
     </div>
+    <script>
+function removeLoader() {
+  var loader = document.getElementById('loader-wrapper');
+  setTimeout(function() {
+    loader.style.display = 'none';
+  }, 2000);
+}
+
+window.onload = removeLoader;
+    </script>
 </body>
 </html>
