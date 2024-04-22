@@ -1,0 +1,99 @@
+*{
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+body {
+    cursor: url('cursor.png'), default; 
+}
+
+.logo{
+    color: white;
+    font-weight: bold;
+    padding: 10px 50px;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+span{
+    color: #874CCC;
+}
+
+nav ul li{
+list-style-type: none;
+display: inline-block;
+padding: 15px;
+margin: 0px 10px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    transition: .4s;
+
+}
+
+nav ul li a:hover{
+    color: #874CCC;
+    padding: 15px 25px;
+    background-color: #874CCC;
+    border-radius: 35px;
+    color:white;
+    transition: .3s;
+    
+
+}
+
+.sty-button{
+    border: none;
+    padding: 15px 25px;
+    background-color: #874CCC;
+    border-radius: 35px;
+    color:white;
+    font-weight: bold;
+    margin: 0px 15px;
+    transition: .3s;
+    font-size: 15px;
+}
+
+.sty-button:hover{
+    background-color: white;
+    color: #874CCC;
+   
+}
+
+.header{
+    margin: 13%;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.header p{
+    font-size: 25px;
+    margin: 10px 0px 5px;
+}
+
+.header h1{
+    font-size: 125px;
+    margin-top: 4px;
+}
+
+.mainc{
+    position: absolute;
+    height: 1200px;
+    margin-left: 1000px;
+    justify-content: right;
+    align-items: right;
+    display: flex;
+}
