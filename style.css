@@ -151,24 +151,66 @@ nav ul li a:hover{
     color: white;
     font-size: 20px;
     font-weight:bold;
+    
 }
 
 .header p{
     font-size: 25px;
     margin: 10px 0px 5px;
+    
 }
 
 .header h1{
     font-size: 125px;
     margin-top: 4px;
+    display: flex;
 }
 
 .mainc{
-    position: absolute;
-    height: 1200px;
-    margin-left: 1000px;
+    position: right;
+    height: 1000px;
     justify-content: right;
     align-items: right;
     display: flex;
 
+}
+
+.skills{
+  padding:40px;
+  color: white;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 90px;
+}
+
+.card div {
+  background: #242424;
+  padding: 40px;
+  font-size: 15px;
+  border-right: 10px;
+  height: 40vh;
+
+  
+}
+
+.card div h2 {
+  background-color: #242424;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card div p {
+  background-color: #242424;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: 600;
 }

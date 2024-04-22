@@ -20,19 +20,39 @@
                 <button class="sty-button">Contact</button>
             </ul>
         </nav>
-        <div class="mainc">
-            <img src="render___sung_jin_woo___solo_leveling_by_nell99_dexfn2w (1).png" alt="Sung jin woo">
-        </div>
         <div class="header">
             <p>Hii, I am</p>
             <h1>Ranbeer</h1>
+        </div>
+    </div>
+
+    <!--Skills Section-->
+
+    <div class="skills">
+            <h1 style="margin-top:150px; align-items: center;justify-content: center;display: flex;">Skill<span>Stack</span></h2>
+        <div class="card">
+            <div>
+                <h2>Web Developer</h2>
+                <p>Passionate web developer with a keen eye for detail and a knack for crafting engaging digital experiences. Proficient in HTML, CSS, JavaScript, and various web development frameworks. Dedicated to staying updated with the latest trends and technologies in the ever-evolving field of web development. Committed to delivering clean, efficient code and creating user-friendly interfaces that leave a lasting impression</p>
+            </div>
+            <div>
+                <h2>Cinematography</h2>
+                <p>Cinematography is the art and technique of capturing moving images on film or digital media. It encompasses the use of camera angles, lighting, composition, color, and movement to visually tell a story, evoke emotions, and create atmosphere within a film or video production. A skilled cinematographer crafts visual narratives that enhance the storytelling, immerse audiences in the world of the film, and bring the director's vision to life on screen.</p>
+            </div>
+            <div>
+                <h2>Graphic Designing</h2>
+                <p>Graphic design is the art of visually communicating messages through typography, imagery, and layout. Designers use their skills to create logos, branding, ads, and more across print and digital platforms, ensuring that visuals effectively convey ideas and engage audiences.                </p>
+            </div>
         </div>
     </div>
     <script>
 function removeLoader() {
   var loader = document.getElementById('loader-wrapper');
   setTimeout(function() {
-    loader.style.display = 'none';
+    loader.style.animation = 'fadeIn 1s forwards';
+    setTimeout(function() {
+      loader.style.display = 'none';
+    }, 1000);
   }, 2000);
 }
 
