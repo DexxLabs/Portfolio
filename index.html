@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>DexLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>DexxLabs</title>
 </head>
 <body>
     <div id="loader-wrapper">
@@ -14,15 +17,15 @@
         <nav>
             <h2 class="logo">Dexx<span>Labs</span></h2> <!--Replace it with an actual logo(Design a logo)-->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Project</a></li>
+                <li><a id="nav1">Home</a></li>
+                <li><a id="nav2">Skills</a></li>
+                <li><a id="nav3">Project</a></li>
                 <button class="sty-button">Contact</button>
             </ul>
         </nav>
         <div class="header">
             <p>Hii, I am</p>
-            <h1>Ranbeer</h1>
+            <h1>Ranbeer<span>.</span></h1>
         </div>
     </div>
         
@@ -30,7 +33,7 @@
 
     <!--Skills Section-->
 
-    <div class="skills">
+    <div id="skills">
             <h1 style="margin-top:150px; align-items: center;justify-content: center;display: flex;">Skill<span>Stack</span></h2>
         <div class="card">
             <div>
@@ -59,6 +62,18 @@ function removeLoader() {
 }
 
 window.onload = removeLoader;
+
+function scrollToSection(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  document.getElementById("nav1").addEventListener("click",()=>{scrollToSection("")})
+  document.getElementById("nav2").addEventListener("click",()=>{scrollToSection("skills")})
+  document.getElementById("nav3").addEventListener("click",()=>{scrollToSection("")})
+  
+  
     </script>
 </body>
 </html>
